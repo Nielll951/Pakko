@@ -100,7 +100,8 @@ a {
 }
 
 .products {
-  padding-top: 150px;
+  margin-top: 150px;
+  margin-bottom: 196px;
 }
 .products__title {
   font-size: 4.8rem;
@@ -176,6 +177,12 @@ a {
   font-weight: 400;
   margin: 0;
 }
+.tarif-info__title-2 {
+  color: #19C787;
+}
+.tarif-info__title-3 {
+  color: #FCB935;
+}
 .tarif-info__title::before {
   content: "";
   display: block;
@@ -219,6 +226,57 @@ a {
   height: 2rem;
   top: calc(50% - 1rem);
   left: 0;
+}
+
+.comments {
+  margin-bottom: 121px;
+}
+.comments__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.comments__items .comments__title {
+  flex: 0 0 45%;
+  font-size: 4.8rem;
+  font-weight: 700;
+  max-width: 455px;
+  margin: 0;
+}
+.comments__item {
+  flex: 0 0 42%;
+  padding: 40px;
+}
+.comments__item-customer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.comments__item-customer .customer-message {
+  margin: 0;
+}
+.comments__item-persinfo {
+  display: flex;
+  align-items: center;
+}
+.comments__item-persinfo .customer-image {
+  width: 48px;
+  height: 48px;
+}
+.comments .item-1 {
+  background-color: #FDEBEE;
+}
+.comments .item-2 {
+  background-color: #E8E5FB;
+}
+.comments .item-3 {
+  background-color: #E6F3FF;
+}
+.comments .item-4 {
+  background-color: #E8FAF3;
+}
+.comments .item-5 {
+  background-color: #FFF5E1;
 }
 
 /*# sourceMappingURL=style.css.map */
