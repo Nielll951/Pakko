@@ -59,6 +59,23 @@ a {
       text-decoration: none;
       padding: 1.6rem 2.6rem;
       border-radius: .6rem;
+      position: relative;
+
+      &::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 0;
+         background: rgba(255, 255, 255, 0.3);
+         border-radius: 5px;
+         transition: all 2s ease;
+      }
+
+      &:hover:before {
+         height: 49px;
+      }
    }
 }
 
@@ -100,12 +117,33 @@ a {
       border-radius: .6rem;
       margin: 0 .8rem;
       display: inline-block;
+      position: relative;
+
+      &::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 0;
+         background: rgba(255, 255, 255, 0.3);
+         border-radius: 5px;
+         transition: all 2s ease;
+      }
+
+      &:hover:before {
+         height: 52px;
+      }
 
       &-main {
          font-size: 1.5rem;
          background-color: $purple;
          border: 1px solid $purple;
          padding: 1.6rem 3.7rem;
+
+         &:hover:before {
+            height: 49px;
+         }
       }
    }
 }
@@ -364,5 +402,73 @@ a {
 
    .item-5 {
       background-color: #FFF5E1;
+   }
+}
+
+footer {
+   background-color: #F8F8F9;
+   padding: 56px 0;
+}
+
+.footer {
+   display: flex;
+   justify-content: space-between;
+   color: $blue;
+   font-size: 1.6rem;
+
+   .social {
+      display: flex;
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
+      margin-top: 24px;
+
+      &__item {
+         margin-right: 10px;
+      }
+
+      &__link {
+         color: $dark;
+         transition: all 0.3s;
+
+         &:hover {
+            color: rgba(16, 10, 48, 0.6);
+         }
+
+         i {
+            font-size: 20px;
+         }
+      }
+   }
+
+   &__item {
+      .footer-logo {
+         display: block;
+         margin-bottom: 24px;
+      }
+
+      &-first {
+         font-weight: 700;
+         line-height: 30px;
+
+         a {
+            color: $dark;
+         }
+      }
+
+
+      &-list {
+         padding-left: 0;
+         list-style-type: none;
+         margin: 0;
+
+         &-item {
+            line-height: 30px;
+         }
+
+         &-item a {
+            color: $blue;
+         }
+      }
    }
 }
