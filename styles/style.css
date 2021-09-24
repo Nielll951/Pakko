@@ -246,6 +246,8 @@ a {
 .comments__item {
   flex: 0 0 42%;
   padding: 40px;
+  border-radius: 0.8rem;
+  margin-bottom: 40px;
 }
 .comments__item-customer {
   display: flex;
@@ -255,13 +257,36 @@ a {
 .comments__item-customer .customer-message {
   margin: 0;
 }
+.comments__item .customer-message {
+  font-size: 17px;
+  color: #4C4764;
+  line-height: 30px;
+  margin: 0 0 20px 0;
+}
 .comments__item-persinfo {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 .comments__item-persinfo .customer-image {
   width: 48px;
   height: 48px;
+  margin-right: 16px;
+}
+.comments__item .customer-name,
+.comments__item .post {
+  font-weight: 700;
+  color: #100A30;
+  margin: 0;
+}
+.comments__item .customer-contact {
+  color: #4C4764;
+  font-size: 15px;
+}
+.comments__item .customer-name,
+.comments__item .customer-contact {
+  line-height: 24px;
+  margin: 0;
 }
 .comments .item-1 {
   background-color: #FDEBEE;

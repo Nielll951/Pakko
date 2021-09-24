@@ -295,6 +295,8 @@ a {
    &__item {
       flex: 0 0 42%;
       padding: 40px;
+      border-radius: 0.8rem;
+      margin-bottom: 40px;
 
       &-customer {
          display: flex;
@@ -306,14 +308,41 @@ a {
          }
       }
 
+      .customer-message {
+         font-size: 17px;
+         color: $blue;
+         line-height: 30px;
+         margin: 0 0 20px 0;
+      }
+
       &-persinfo {
          display: flex;
          align-items: center;
+         margin-bottom: 30px;
 
          .customer-image {
             width: 48px;
             height: 48px;
+            margin-right: 16px;
          }
+      }
+
+      .customer-name,
+      .post {
+         font-weight: 700;
+         color: $dark;
+         margin: 0;
+      }
+
+      .customer-contact {
+         color: $blue;
+         font-size: 15px;
+      }
+
+      .customer-name,
+      .customer-contact {
+         line-height: 24px;
+         margin: 0;
       }
    }
 
