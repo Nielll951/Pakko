@@ -43,12 +43,9 @@ a {
   margin-left: 2.7rem;
 }
 .nav__link {
-  color: #100A30;
+  color: red;
   text-decoration: none;
   transition: all 0.3s;
-}
-.nav__link:hover {
-  color: #624DE3;
 }
 .nav__btn {
   font-size: 1.4rem;
@@ -390,25 +387,6 @@ footer {
 }
 .footer__item-list-item {
   line-height: 30px;
-}
-.footer__item-list-item a {
-  display: inline-block;
-  position: relative;
-}
-.footer__item-list-item a::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 0;
-  bottom: 0;
-  height: 1px;
-  margin: 2px 0;
-  left: 0;
-  background-color: #4C4764;
-  transition: all 0.4s ease-in 0s;
-}
-.footer__item-list-item a:hover:after {
-  width: 100%;
 }
 .footer__item-list-item a {
   color: #4C4764;

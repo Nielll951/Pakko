@@ -50,6 +50,11 @@ a {
    &__link {
       color: $dark;
       text-decoration: none;
+      transition: all 0.3s;
+
+      &:hover {
+         color: $purple;
+      }
    }
 
    &__btn {
@@ -464,6 +469,28 @@ footer {
 
          &-item {
             line-height: 30px;
+
+            a {
+               display: inline-block;
+               position: relative;
+
+               &::after {
+                  content: '';
+                  display: block;
+                  position: absolute;
+                  width: 0;
+                  bottom: 0;
+                  height: 1px;
+                  margin: 2px 0;
+                  left: 0;
+                  background-color: #4C4764;
+                  transition: all 0.4s ease-in 0s;
+               }
+
+               &:hover:after {
+                  width: 100%;
+               }
+            }
          }
 
          &-item a {
