@@ -82,10 +82,30 @@ a {
   position: relative;
   padding-bottom: 757px;
 }
+@media (max-width: 992px) {
+  .banner {
+    padding-bottom: 75px;
+  }
+}
+@media (max-width: 768px) {
+  .banner {
+    padding-bottom: 520px;
+  }
+}
 .banner__title {
   font-size: 5.5rem;
   max-width: 570px;
   margin: 0 auto 3.1rem;
+}
+@media (max-width: 992px) {
+  .banner__title {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .banner__title {
+    font-size: 4.2rem;
+  }
 }
 .banner__img {
   position: absolute;
@@ -93,6 +113,16 @@ a {
   right: 0;
   bottom: -172px;
   margin: 0 auto;
+}
+@media (max-width: 1170px) {
+  .banner__img {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .banner__img {
+    display: none;
+  }
 }
 
 .btn-group {
@@ -140,6 +170,11 @@ a {
   margin-top: 150px;
   margin-bottom: 196px;
 }
+@media (max-width: 1200px) {
+  .products {
+    margin-bottom: 150px;
+  }
+}
 .products__title {
   font-size: 4.8rem;
   font-weight: 700;
@@ -147,14 +182,30 @@ a {
   max-width: 650px;
   margin: 0 auto;
 }
+@media (max-width: 992px) {
+  .products__title {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .products__title {
+    font-size: 4.2rem;
+  }
+}
 
 .tarif {
   display: flex;
   justify-content: space-between;
   margin-top: 4rem;
+  flex-wrap: wrap;
 }
 .tarif-item {
   flex: 0 0 32%;
+}
+@media (max-width: 882px) {
+  .tarif-item {
+    flex: 0 0 49%;
+  }
 }
 .tarif-item-01 .tarif-header {
   background-image: url(../images/tarif-bg-01.svg);
@@ -268,6 +319,11 @@ a {
 .comments {
   margin-bottom: 121px;
 }
+@media (max-width: 1200px) {
+  .comments {
+    margin-bottom: 60px;
+  }
+}
 .comments__items {
   display: flex;
   justify-content: space-between;
@@ -280,11 +336,35 @@ a {
   max-width: 455px;
   margin: 0;
 }
+@media (max-width: 1200px) {
+  .comments__items .comments__title {
+    max-width: none;
+    flex: 0 0 100%;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+}
+@media (max-width: 992px) {
+  .comments__items .comments__title {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .comments__items .comments__title {
+    font-size: 4.2rem;
+  }
+}
 .comments__item {
   flex: 0 0 42%;
   padding: 40px;
   border-radius: 0.8rem;
   margin-bottom: 40px;
+}
+@media (max-width: 1200px) {
+  .comments__item {
+    margin-bottom: 20px;
+    flex: 0 0 93%;
+  }
 }
 .comments__item-customer {
   display: flex;
